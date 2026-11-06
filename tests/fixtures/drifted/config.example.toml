@@ -1,0 +1,7 @@
+# Example configuration for the drifted fixture tool.
+[server]
+host = "localhost"
+port = 8000
+
+[database]
+url = "sqlite:///items.db"

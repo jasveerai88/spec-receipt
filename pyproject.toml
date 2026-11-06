@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spec-receipt"
+version = "1.0.0"
+description = "Receipt a repo's design spec against its code — every spec item IMPLEMENTED, MISSING, CONTRADICTED or UNTRACED, with file-and-line evidence."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Jasveer Singh" },
+]
+keywords = [
+    "spec",
+    "drift",
+    "audit",
+    "static-analysis",
+    "cli",
+    "documentation",
+    "ai-agents",
+    "developer-tools",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jasveerai88/spec-receipt"
+Repository = "https://github.com/jasveerai88/spec-receipt"
+Issues = "https://github.com/jasveerai88/spec-receipt/issues"
+Changelog = "https://github.com/jasveerai88/spec-receipt/blob/main/CHANGELOG.md"
+
+[project.scripts]
+spec-receipt = "spec_receipt:main"
+
+# The implementation is a single standard-library module in
+# src/; it is installed as the top-level module `spec_receipt`,
+# and `python3 src/spec_receipt.py` keeps working from a checkout.
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["spec_receipt"]
