@@ -571,3 +571,5 @@ MIT — see [LICENSE](LICENSE).
 If spec-receipt catches your code drifting away from
 your spec, consider
 [sponsoring](https://github.com/sponsors/jasveerai88).
+Sponsorship funds the time to maintain spec-receipt, ship
+fixes, and build the next checks its users ask for.
