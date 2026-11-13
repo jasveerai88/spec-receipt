@@ -77,8 +77,7 @@ pipx install spec-receipt              # or: pip install spec-receipt
 spec-receipt check path/to/repo
 ```
 
-*(The PyPI name goes live when v1.0.0 is published;
-until then use a source checkout:
+*(Live on PyPI since v1.0.0. Source checkouts also work:
 `python3 src/spec_receipt.py check <repo>`, or
 `pipx install git+https://github.com/jasveerai88/spec-receipt`.)*
 
